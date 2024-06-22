@@ -1,0 +1,36 @@
+.header {
+    padding-block: 40px;
+}
+
+.header .container,
+.header-nav__list,
+.header__search {
+    display: flex;
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav__list {
+    column-gap: 30px;
+}
+
+.header-search__button {
+    cursor: pointer;
+    color: var(--color-purple);
+    margin-right: 4px;
+}
+
+.header-search_input {
+    border: 0;
+    border-bottom: 1px solid rgba(51,51,51, .2);
+    outline: none;
+}
+
+.header__select {
+    font-weight: 700;
+    background-color: transparent;
+    border: 0;
+}

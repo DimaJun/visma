@@ -1,0 +1,53 @@
+:root {
+    --container-paddings: 24px;
+    --container-width: calc(1296px + (var(--container-paddings) * 2));
+    --font-family: "PT Sans", sans-serif;
+    --transition-duration: 0.2s;
+
+    --color-white: #FFFFFF;
+    --color-black: #333333;
+    --color-purple: #3D348B;
+    --color-blue: #5DB7DE;
+
+}
+
+* {
+    transition-duration: var(--transition-duration);
+}
+
+.container {
+    max-width: var(--container-width);
+    padding-inline: var(--container-paddings);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--color-black);
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.button {
+    border: 0;
+    background-color: transparent;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

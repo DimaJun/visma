@@ -1,0 +1,45 @@
+@import url('blocks/header.css');
+@import url('blocks/footer.css');
+@import url('normalize.css');
+@import url('fonts.css');
+@import url('utilites.css');
+
+
+.main {
+    padding: 100px 0;
+}
+
+.contracting-option ul,
+.ukr-residents ul,
+.ukr-residents ol,
+.not-ukr-residents ol,
+.not-ukr-residents ul {
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.main .container {
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    max-width: 856px;
+}
+
+.page-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contracting-option ul {
+    margin-block: 13px 60px;
+}
+
+.ukr-residents {
+    margin-bottom: 60px;
+}

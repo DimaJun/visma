@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Visma</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img 
+                  src="./icons/logo.svg"
+                  alt="logo"
+                  class="header_logo"
+                  loading="lazy"
+                />
+            </div>
+            <nav class="header__nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav-list__item">
+                        <a href="./index.html" class="header-nav-list__link">Главная</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a href="calc.html" class="header-nav-list__link">Услуги</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a href="zayavki.html" class="header-nav-list__link">О компании</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a href="#!" class="header-nav-list__link">Новости</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="header-search__button button" type="button">
+                    <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9719 15.7301H16.971L16.6163 15.3882C17.408 14.4689 17.9867 13.386 18.3109 12.2171C18.635 11.0482 18.6966 9.82217 18.4913 8.62668C17.8959 5.10665 14.9566 2.29569 11.4091 1.86518C10.162 1.7075 8.89525 1.83704 7.7059 2.24389C6.51654 2.65074 5.43607 3.32412 4.54717 4.2125C3.65827 5.10088 2.98449 6.18072 2.5774 7.36938C2.17031 8.55804 2.04069 9.82402 2.19847 11.0704C2.62923 14.6158 5.44184 17.5534 8.96394 18.1485C10.1601 18.3537 11.3869 18.2921 12.5565 17.9681C13.7261 17.6442 14.8096 17.0658 15.7294 16.2745L16.0715 16.6291V17.6294L21.456 23.0107C21.9754 23.5298 22.8243 23.5298 23.3437 23.0107C23.8632 22.4916 23.8632 21.6432 23.3437 21.1241L17.9719 15.7301ZM10.3702 15.7301C7.21556 15.7301 4.66901 13.185 4.66901 10.0322C4.66901 6.87933 7.21556 4.33427 10.3702 4.33427C13.5249 4.33427 16.0715 6.87933 16.0715 10.0322C16.0715 13.185 13.5249 15.7301 10.3702 15.7301Z" fill="#3D348B"/>
+                    </svg>
+                </button>
+                <input type="text" class="header-search_input">
+            </div>
+            <select id="headerSelect" class="header__select">
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="visually-hidden">Основной контент</h1>
+        <section class="hero">
+            <h2 class="visually-hidden">Про компанию</h2>
+            <div class="container">
+                <div class="hero-left">
+                    <div class="hero-left-text__wrapper">
+                        <h3 class="hero_title">Тавимский морской порт VISMA</h3>
+                        <p class="hero_descr">Vel posuere nibh odio placerat massa vel tellus tortor. Varius eget nunc scelerisque etiam felis facilisi ante viverra sem. Nunc eros elementum.</p>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="#!" class="hero_link">
+                            О компании
+                            <div class="hero-link_arrow">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5001 7.70496V4.70496H0.810097L0.787598 3.19746H7.5001V0.204956L11.2501 3.95496L7.5001 7.70496Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <article class="service__card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Погрузочно-разгрузочная <br> деятельность</h3>
+                    </article>
+                    <article class="service__card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Хранение <br> грузов</h3>
+                    </article>
+                    <article class="service__card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Складские <br> операции</h3>
+                    </article>
+                    <article class="service__card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Швартовые <br> операции</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h2 class="visually-hidden">Услуги</h2>
+            <div class="container">
+                <div class="services-left">
+                    <h3 class="services__title">Услуги</h3>
+                    <ul class="services-list">
+                        <li class="services-list__item">
+                            <a href="#!" class="services-list__link">Тарифы на услуги по обеспечению контроля доступа на территорию VISMA на 2022 год</a><p class="document-format">pdf</p>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#!" class="services-list__link">Условия определения цены договора и тарифы на работы</a><p class="document-format">pdf</p>
+                        </li>
+                        <li class="services-list__item">
+                            <a href="#!" class="services-list__link">Договор перевалки (типовая форма)</a><span class="document-format">pdf</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services-right">
+                    <article class="services-card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Хранение грузов</h3>
+                    </article>
+                    <article class="services-card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Швартовые операции</h3>
+                    </article>
+                    <article class="services-card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Складские операции</h3>
+                    </article>
+                    <article class="services-card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Агентское обслуживание судов</h3>
+                    </article>
+                    <article class="services-card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Буксировка / сопровождение судов</h3>
+                    </article>
+                    <article class="services-card">
+                        <span class="service-card_name">Услуги</span>
+                        <h3 class="service-card_descr">Погрузочно-разгрузочная деятельность</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <h2 class="visually-hidden">О компании</h2>
+            <div class="container">
+                <h3 class="about__title">О компании</h3>
+                <div class="about-wrapper">
+                    <div class="about-left">
+                        <div class="about-text">
+                            <p>Tristique orci consectetur sit felis. Sed ac auctor tellus lobortis. Enim non turpis nulla nec a sapien sit amet molestie. Et id malesuada gravida sit volutpat. Volutpat sed lectus elementum diam neque facilisis in. Convallis nibh sem in viverra quis. Interdum pharetra.</p>
+                            <p>Libero nunc porttitor id mi convallis ultricies convallis erat. At sagittis nisi at in diam sit.</p>
+                            <ul>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                                <li>
+                                    Vivamus tincidunt non lectus odio magna semper odio risus. Vivamus tincidunt non lectus odio magna semper odio risus.Vivamus tincidunt non lectus odio magna semper odio risus.
+                                </li>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                            </ul>
+                            <p>Quam accumsan mauris enim quam. A commodo ultrices urna vitae nibh rhoncus at nisl. Duis nibh libero ut enim. Metus aliquam cursus molestie sapien risus. Suspendisse volutpat.</p>
+                            <ul>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                                <li>Vivamus tincidunt non lectus odio magna semper odio risus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-video">
+                            <a href="#!" class="about-video__link">
+                                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.6666 25.0833V42.9167C25.6666 44.1945 26.25 45.1667 27.4166 45.8333C28.5833 46.5 29.7222 46.4444 30.8333 45.6667L44.6666 36.8333C45.7222 36.1667 46.25 35.2222 46.25 34C46.25 32.7778 45.7222 31.8333 44.6666 31.1667L30.8333 22.3333C29.7222 21.5556 28.5833 21.5 27.4166 22.1667C26.25 22.8333 25.6666 23.8056 25.6666 25.0833ZM34 67.3333C29.3888 67.3333 25.0555 66.4578 21 64.7067C16.9444 62.9578 13.4166 60.5833 10.4166 57.5833C7.41663 54.5833 5.04218 51.0556 3.29329 47C1.54218 42.9444 0.666626 38.6111 0.666626 34C0.666626 29.3889 1.54218 25.0556 3.29329 21C5.04218 16.9445 7.41663 13.4167 10.4166 10.4167C13.4166 7.41667 16.9444 5.04112 21 3.29C25.0555 1.54112 29.3888 0.666672 34 0.666672C38.6111 0.666672 42.9444 1.54112 47 3.29C51.0555 5.04112 54.5833 7.41667 57.5833 10.4167C60.5833 13.4167 62.9577 16.9445 64.7066 21C66.4577 25.0556 67.3333 29.3889 67.3333 34C67.3333 38.6111 66.4577 42.9444 64.7066 47C62.9577 51.0556 60.5833 54.5833 57.5833 57.5833C54.5833 60.5833 51.0555 62.9578 47 64.7067C42.9444 66.4578 38.6111 67.3333 34 67.3333Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <article class="video-card">
+                            <p class="video-card_name">Запрос ставки и условий погрузочно-разгрузочных работ</p>
+                            <h4 class="video-card_descr">Рассчитайте моментально стоимость полных портовых услуг в порту VISMA</h4>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <h2 class="visually-hidden">Новости</h2>
+            <div class="container">
+                <div class="news-top">
+                    <h3 class="news__title">Новости</h3>
+                    <a href="#!" class="news_link">
+                        Все Новости
+                        <div class="news-link_arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5001 7.70496V4.70496H0.810097L0.787598 3.19746H7.5001V0.204956L11.2501 3.95496L7.5001 7.70496Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="news-bottom">
+                    <article class="news-card">
+                        <img 
+                          src="./images/news/1.jpg"
+                          alt="some photo"
+                          class="news-card__image"
+                          loading="lazy"
+                        />
+                        <div class="news-descr">
+                            <time class="news_publication-date" datetime="2022-05-22">20/05/22</time>
+                            <h3 class="card_title">Semper eu pulvinar eget integer</h3>
+                            <p class="card__descr">Pretium duis phasellus netus ac. Nunc nibh nunc integer feugiat et aliquam cras. Amet pharetra montes ipsum gravida tellus tellus.</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img 
+                          src="./images/news/2.jpg"
+                          alt="some photo"
+                          class="news-card__image"
+                          loading="lazy"
+                        />
+                        <div class="news-descr">
+                            <time class="news_publication-date" datetime="2022-05-22">20/05/22</time>
+                            <h3 class="card_title">Vitae id nec nulla sit nunc cursus curabitur tempus vel enim.</h3>
+                            <p class="card__descr">Cras arcu ac commodo suspendisse commodo ipsum turpis dui. Quis pharetra malesuada eget sit egestas et integer. Suspendisse a.</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img 
+                          src="./images/news/3.jpg"
+                          alt="some photo"
+                          class="news-card__image"
+                          loading="lazy"
+                        />
+                        <div class="news-descr">
+                            <time class="news_publication-date" datetime="2022-05-22">20/05/22</time>
+                            <h3 class="card_title">Integer nisi sagittis in aliquet. Enim eget varius lacinia est a.</h3>
+                            <p class="card__descr">Lectus tempus felis pretium vitae. Tempor massa vestibulum condimentum cursus diam quam. Mattis facilisi dignissim donec eget vel.</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img 
+                          src="./images/news/4.jpg"
+                          alt="some photo"
+                          class="news-card__image"
+                          loading="lazy"
+                        />
+                        <div class="news-descr">
+                            <time class="news_publication-date" datetime="2022-05-22">20/05/22</time>
+                            <h3 class="card_title">Facilisis vitae proin quis</h3>
+                            <p class="card__descr">Iaculis diam quam velit sit nunc turpis ultricies elementum. Vitae lacinia tristique rutrum faucibus nulla quis ultricies. Risus.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <address class="location">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1.875C12.266 1.87823 9.6448 2.96575 7.71153 4.89902C5.77826 6.83229 4.69074 9.45344 4.68751 12.1875C4.68424 14.4218 5.41406 16.5954 6.76501 18.375C6.76501 18.375 7.04626 18.7453 7.0922 18.7987L15 28.125L22.9116 18.7941C22.9528 18.7444 23.235 18.375 23.235 18.375L23.2359 18.3722C24.5862 16.5934 25.3157 14.4207 25.3125 12.1875C25.3093 9.45344 24.2218 6.83229 22.2885 4.89902C20.3552 2.96575 17.7341 1.87823 15 1.875ZM15 15.9375C14.2583 15.9375 13.5333 15.7176 12.9166 15.3055C12.2999 14.8935 11.8193 14.3078 11.5355 13.6226C11.2516 12.9373 11.1774 12.1833 11.3221 11.4559C11.4668 10.7285 11.8239 10.0603 12.3484 9.53585C12.8728 9.0114 13.541 8.65425 14.2684 8.50955C14.9959 8.36486 15.7499 8.43912 16.4351 8.72295C17.1203 9.00678 17.706 9.48743 18.118 10.1041C18.5301 10.7208 18.75 11.4458 18.75 12.1875C18.7488 13.1817 18.3533 14.1348 17.6503 14.8378C16.9473 15.5408 15.9942 15.9363 15 15.9375Z" fill="white"/>
+                    </svg>                        
+                    <p><a href="#!">123456, г. Тавима, ул. Морская, д. 21</a></p>
+                </address>
+                <div class="footer__logo">
+                    <a href="#!">
+                        <svg width="108" height="30" viewBox="0 0 108 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M101.612 30L97.9839 15.5775C97.5463 13.8476 97.2569 12.1168 96.9676 10.5302H96.8214C96.5321 12.261 96.3859 13.8476 95.9504 15.7217L92.3199 30H86.0784L94.3534 0.00203037H99.2894L108 30H101.612ZM6.38674 0.00203037L10.0161 14.4236C10.5969 16.1544 10.742 17.8862 11.0324 19.4708H11.1776C11.4679 17.741 11.6131 16.0091 12.0486 14.2793L15.678 0.00203037H21.9196L13.6456 30H8.70956L0 0.00203037H6.38674ZM26.418 0.00203037H32.3703V30H26.418V0.00203037ZM66.0491 0.00203037L69.0958 17.742L71.5638 0.00203037H79.5475L82.5962 30H76.4998L75.048 8.36668L74.0318 15.7217L71.5638 30H66.9192L64.0156 15.5775L62.9994 8.94363V8.36668H62.8542L61.9832 30H55.5954L58.2096 0.00203037H66.0491ZM47.1772 0.00203037C46.161 0.723209 45.4361 2.02031 44.8554 3.31843C43.2585 6.92433 44.9996 9.80802 46.4513 12.4043C46.5975 12.6927 46.8889 13.1254 47.032 13.5582C50.3711 19.0381 51.5325 23.0757 49.2107 28.8441L48.63 29.999H41.3712C42.2423 29.2768 43.1123 28.2692 43.5478 27.1143C45.291 23.2199 43.2585 19.615 41.3712 16.0081C39.1946 11.8263 36.8707 7.50025 39.3387 1.58659C39.4849 1.00965 40.0656 0 40.0656 0H47.1772V0.00203037Z" fill="#3D348B"/>
+                        </svg>
+                    </a>                        
+                </div>
+                <div class="footer-contacts">
+                    <a href="#!" class="footer__telephone">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="white"/>
+                        </svg>
+                        +7 (123) 456-67-89
+                    </a>
+                    <a href="#!" class="footer__mail">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM24.5 10.3125L15.6625 15.8375C15.2625 16.0875 14.7375 16.0875 14.3375 15.8375L5.5 10.3125C5.37466 10.2421 5.2649 10.1471 5.17736 10.0331C5.08982 9.91906 5.02633 9.78847 4.99072 9.64921C4.95511 9.50995 4.94813 9.36492 4.9702 9.22288C4.99226 9.08085 5.04292 8.94477 5.1191 8.82288C5.19528 8.70099 5.29541 8.59582 5.41341 8.51374C5.53141 8.43167 5.66484 8.37439 5.80562 8.34537C5.9464 8.31636 6.0916 8.31621 6.23244 8.34494C6.37328 8.37366 6.50683 8.43067 6.625 8.5125L15 13.75L23.375 8.5125C23.4932 8.43067 23.6267 8.37366 23.7676 8.34494C23.9084 8.31621 24.0536 8.31636 24.1944 8.34537C24.3352 8.37439 24.4686 8.43167 24.5866 8.51374C24.7046 8.59582 24.8047 8.70099 24.8809 8.82288C24.9571 8.94477 25.0077 9.08085 25.0298 9.22288C25.0519 9.36492 25.0449 9.50995 25.0093 9.64921C24.9737 9.78847 24.9102 9.91906 24.8226 10.0331C24.7351 10.1471 24.6253 10.2421 24.5 10.3125Z" fill="white"/>
+                        </svg>
+                        order@visma.ua
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-lists-wrapper">
+                    <ul class="footer-bottom__list">
+                        <li class="footer-bottom__item list-title">
+                            <a href="#!" class="footer-bottom__link">информация о юр. лице</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">ОГРН 11111111111111111</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">ИНН 2222222222222</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">КПП 3333333333333</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">ОКПО 44444444444 ОКВЭД 52.24</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">ОКПО 44444444444 ОКВЭД 52.24</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list">
+                        <li class="footer-bottom__item list-title">
+                            <a href="#!" class="footer-bottom__link">закупки</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Нормативные документы</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Закупки на VISMA Order</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Закупки на VISMA Tender</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list">
+                        <li class="footer-bottom__item list-title">
+                            <a href="#!" class="footer-bottom__link">акционерам</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Устав VISMA</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Свидетельства госрегистрации</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Список аффилированных лиц</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Информация</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Отчеты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-bottom__list">
+                        <li class="footer-bottom__item list-title">
+                            <a href="#!" class="footer-bottom__link">О компании</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Порт сегодня</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Характеристики порта</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">История</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Дипломы и награды</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Транспортная безопасность</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Экология</a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#!" class="footer-bottom__link">Правовая информация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <p>все права защищены АО VISMA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
